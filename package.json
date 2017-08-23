@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --progress --colors --inline --hot",
+    "comment": "progress - Mostra o progresso do webpack no terminal | colors - mostra colorido para facilitar a leitura | inline e hot - fica atualizando sempre que há uma mmudança"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/alanandrade/exercicios_react/issues"
   },
-  "homepage": "https://github.com/alanandrade/exercicios_react#readme"
+  "homepage": "https://github.com/alanandrade/exercicios_react#readme",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
 }
