@@ -13,6 +13,10 @@ module.exports = {
         contentBase: './public',
     },
 
+    resolve: {
+        extensions: ['', '.js', '.jsx'] //Consegue importar arquivos em colocar extensao, pode inserir outras extensoes
+    },
+
     module: {
         loaders: [{
             test: /.jsx?$/, //Verefica a extensao deste arquivo com está expressão regular
