@@ -23,7 +23,8 @@ module.exports = {
             loader: 'babel-loader', //Babel, que irá compilar o nosso código para funcionar em todos os browsers o ES(EcmaScript).
             exclude: /node_modules/, //Não irá fazer alterações nas dependências
             query: {
-                presets: ['es2015', 'react']
+                presets: ['es2015', 'react'],
+                plugins: ['transform-object-rest-spread']
             }
         }]
     }
